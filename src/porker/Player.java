@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class Player {
     private String name;
-    private int coins =0;
+    protected int coins =0;
     private List<Cards>hand;//手札
     
     /**コンスタラクタ
@@ -41,12 +41,7 @@ public class Player {
     public void getCoin(int num){
         this.coins += num;
     }
-     /**現在コインを取得する
-     * playerのコインの枚数から増やします。
-     * @return 現在のコインの枚数*/
-    public int nowCoin(){
-        return this.coins;
-    }
+
     /**カードを引く
      * デッキの一番上からカードを引く。
      * @param deck 山札*/

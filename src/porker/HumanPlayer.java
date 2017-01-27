@@ -5,6 +5,7 @@
  */
 package porker;
 
+import java.util.Random;
 /**
  *　Playerクラスを継承したHumanPlayerクラス
  * @author c16311
@@ -12,5 +13,11 @@ package porker;
 public class HumanPlayer extends Player{
     public HumanPlayer(String name,int coins){
         super(name,coins);
+    }
+    /**現在コインを取得する
+     * playerのコインの枚数から増やします。
+     * @return 現在のコインの枚数*/
+    public int nowCoin(){
+        return this.coins;
     }
 }

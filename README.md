@@ -1,0 +1,9 @@
+#提出課題:stc_Porker
+##c16311
+###プログラムリスト(以下のコードに記載)
+Cards.java  
+ComputerPlayer.java  
+Deck.java  
+HumanPlayer.java  
+Player.java  
+PorkerTester.java  

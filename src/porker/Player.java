@@ -41,6 +41,12 @@ public class Player {
     public void getCoin(int num){
         this.coins += num;
     }
+     /**現在コインを取得する
+     * playerのコインの枚数から増やします。
+     * @return 現在のコインの枚数*/
+    public int nowCoin(){
+        return this.coins;
+    }
     /**カードを引く
      * デッキの一番上からカードを引く。
      * @param deck 山札*/

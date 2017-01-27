@@ -61,8 +61,10 @@ public class PorkterTester {
         System.out.println();
         
         //コインのベット
-        System.out.print("どれくらい賭ける...>");
-        youSetBet=stdin.nextInt();
+        do{
+            System.out.print("どれくらい賭ける...>");
+            youSetBet=stdin.nextInt();
+        }while(you.nowCoin()<youSetBet);
         you.bet(youSetBet);totalCoin+=youSetBet;
         you.bet(10);totalCoin+=10;
         computer.bet((cpuSetBet=(rand.nextInt(5)+1)*10));totalCoin+=cpuSetBet;
